@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\title{A Simple LaTeX Example}
+\author{Jane Doe}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This is a simple test document to demonstrate conversion from \LaTeX{} to MyST Markdown for use in Jupyter Book.
+\end{abstract}
+
+\section{Introduction}
+
+LaTeX is a powerful typesetting system, especially for mathematics and scientific writing.  
+In this short example, we will include text, math, and a figure.
+
+\section{Mathematics Example}
+
+Here is an inline equation: $E = mc^2$.
+
+And here is a displayed equation:
+
+\[
+\nabla \cdot \mathbf{E} = \frac{\rho}{\varepsilon_0}
+\]
+
+\section{Including a Figure}
+
+Figure~\ref{fig:example} shows an example image.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.4\textwidth]{example-image-a}
+\caption{An example figure from the \texttt{graphicx} package.}
+\label{fig:example}
+\end{figure}
+
+\section{Conclusion}
+
+This simple document should help you test your \LaTeX{} to MyST conversion setup.
+
+\end{document}
